@@ -1,12 +1,13 @@
 <?php
 session_start();
 ob_start();
-include_once($_SERVER["DOCUMENT_ROOT"] . "/macahyuk/config.php");
+
+include_once($_SERVER["DOCUMENT_ROOT"] . "/macahyuk/macahyuk/config.php");
 include_once(BASEPATH .  "/database.php");
 include_once(BASEPATH .  "/functions.php");
 date_default_timezone_set('Asia/Jakarta');
 if (!isset($_SESSION['user_id'])){
-    header("location: /macahyuk/login.php");
+    header("location: login.php");
     exit;
 }
 

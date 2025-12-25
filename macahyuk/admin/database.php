@@ -1,7 +1,7 @@
 <?php 
 // include_once("config.php"); 
 
-define("DB", mysqli_connect('sql112.infinityfree.com', 'if0_37823817', 'd945E1ddb0', 'if0_37823817_perpus'));
+define("DB", mysqli_connect('localhost', 'root', '', 'perpus'));
 
 function getPopulerBooks(){
   $sql = "SELECT * FROM books where is_trending=1 limit 12";

@@ -3,9 +3,9 @@ $title = "Dashboard";
 require_once "../config.php";
 require_once BASEPATH . "/layouts/header.php";
 
-$monthly = getMonthlyTotal();
-$annual = getAnnualTotal();
-$overview = getOverviewTotal();
+$monthly = getMonthlyTotal() ?? [];
+$annual = getAnnualTotal() ?? [];
+$overview = getOverviewTotal() ?? [];
 $labels = [];
 $datas = [];
 foreach($overview as $data) {
@@ -60,7 +60,7 @@ foreach($categories as $category) {
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp<?= number_format($monthly['total'], 0, '', '.') ?></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp<?= number_format($monthly['total'] ?? 0, 0, '', '.') ?></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="bi bi-calendar-fill text-gray-300 h3"></i>
@@ -78,7 +78,7 @@ foreach($categories as $category) {
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp<?= number_format($annual['total'], 0, '', '.') ?></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp<?= number_format($annual['total'] ?? 0, 0, '', '.') ?></div>
                                         </div>
                                         <div class="col-auto">
                                             <h3>Rp</h3>

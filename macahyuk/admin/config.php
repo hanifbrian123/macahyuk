@@ -1,9 +1,9 @@
 <?php
-define("BASEPATH", $_SERVER["DOCUMENT_ROOT"] . "/macahyuk/admin");
-define("BASEURL", "https://macahyuk.kesug.com/macahyuk/admin");
-define("TAKROKAROAN", "https://macahyuk.kesug.com/macahyuk");
+define("BASEPATH", $_SERVER["DOCUMENT_ROOT"] . "/macahyuk/macahyuk/admin");
+define("BASEURL", "http://localhost/macahyuk/macahyuk/admin");
+define("TAKROKAROAN", "http://localhost/macahyuk/macahyuk");
 
-require_once $_SERVER["DOCUMENT_ROOT"] . "/macahyuk/admin/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/macahyuk/macahyuk/admin/database.php";
 
 session_start();
 
