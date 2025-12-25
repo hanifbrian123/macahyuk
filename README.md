@@ -1,7 +1,7 @@
 # MacaHyuK – Web Perpustakaan Digital
 
 MacaHyuK adalah aplikasi web perpustakaan digital yang memungkinkan pengguna untuk mengakses koleksi buku, melakukan peminjaman, serta mengelola data perpustakaan melalui peran User dan Admin.  
-Aplikasi ini dikembangkan menggunakan PHP dan MySQL, serta dirancang untuk berjalan pada local web server seperti XAMPP atau Laragon.
+Aplikasi ini dikembangkan menggunakan PHP dan MySQL.
 
 ---
 
