@@ -28,6 +28,15 @@ Berikut adalah beberapa tampilan utama aplikasi (gambar diambil dari folder `/im
 Tampilan disusun menggunakan HTML agar tidak melebar dan tetap rapi saat dibuka.
 
 <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px;">
+  <img src="images/Screenshot 2025-12-25 083956.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084004.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084032.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084047.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084105.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084120.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084148.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084159.png" style="width:100%; border-radius:8px;">
+  <img src="images/Screenshot 2025-12-25 084016.png" style="width:100%; border-radius:8px;">
   <img src="images/Screenshot 2025-12-25 083748.png" style="width:100%; border-radius:8px;">
   <img src="images/Screenshot 2025-12-25 083758.png" style="width:100%; border-radius:8px;">
   <img src="images/Screenshot 2025-12-25 083804.png" style="width:100%; border-radius:8px;">
@@ -37,15 +46,6 @@ Tampilan disusun menggunakan HTML agar tidak melebar dan tetap rapi saat dibuka.
   <img src="images/Screenshot 2025-12-25 083844.png" style="width:100%; border-radius:8px;">
   <img src="images/Screenshot 2025-12-25 083849.png" style="width:100%; border-radius:8px;">
   <img src="images/Screenshot 2025-12-25 083908.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 083956.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084004.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084016.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084032.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084047.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084105.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084120.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084148.png" style="width:100%; border-radius:8px;">
-  <img src="images/Screenshot 2025-12-25 084159.png" style="width:100%; border-radius:8px;">
 </div>
 
 ---
