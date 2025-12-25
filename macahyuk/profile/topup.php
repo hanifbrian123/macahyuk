@@ -4,7 +4,9 @@ $page = "user";
 require_once "../config.php";
 require_once BASEPATH . "/layouts/header.php";
 
-$username=mysqli_fetch_assoc(getUserByEncryptEmail($_SESSION['kanjsbdhiadbasndksandaiuwfajjsabdbasgdabasdj']))['username'];
+// var_dump(sha2(($_SESSION['kanjsbdhiadbasndksandaiuwfajjsabdbasgdabasdj']), 256));
+
+$username=(getUsernameByUserID($_SESSION['user_id']));
 
 $all = getAllServer();
 
@@ -68,9 +70,9 @@ if(isset($_POST['submit'])) {
                 <form action="" method="post">
                     <h1 class="text-center mb-5">TopUp</h1>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="." autocomplete="off" readonly value="<?=$username?>">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="." autocomplete="off" value="<?= $username ?>" disabled>
                         <label for="floatingInput">Username</label>
-                        <?= "<p class='ms-1'>Hello</p>" ?>
+                        <!-- <?= "<p class='ms-1'>Hello</p>" ?> -->
                     </div>
                     <div class="form-floating mb-3">
                         <input type="number" name="nominal" class="form-control" id="floatingInput" placeholder="." autocomplete="off" value="<?= isset($nominal)? $nominal : '' ?>">

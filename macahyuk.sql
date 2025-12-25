@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: sql112.infinityfree.com
--- Generation Time: Dec 20, 2024 at 01:59 PM
--- Server version: 10.6.19-MariaDB
--- PHP Version: 7.2.22
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 25 Des 2025 pada 02.20
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `if0_37823817_perpus`
+-- Database: `macahyuk`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bank`
+-- Struktur dari tabel `bank`
 --
 
 CREATE TABLE `bank` (
@@ -38,7 +37,7 @@ CREATE TABLE `bank` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `bank`
+-- Dumping data untuk tabel `bank`
 --
 
 INSERT INTO `bank` (`id`, `user_id`, `pin`, `current_balance`, `usage_balance`, `created_at`) VALUES
@@ -51,12 +50,13 @@ INSERT INTO `bank` (`id`, `user_id`, `pin`, `current_balance`, `usage_balance`, 
 (8, 12, 'bb60c3d23f51a04bf179f7d17c4b423b7882d3572a9f90cb7ebd44238675e5f3', 14000, 6000, '2024-12-01 21:54:04'),
 (9, 14, 'f8cee61cb7f56e76ecfe6e4a164aa5119f8076cc75bea5cb90259339ae119b4d', 0, 0, '2024-12-02 14:11:20'),
 (10, 15, '4aad9ad6eb25a064345cbfeaecc5de59f838f839793ce1787177f1770a4ecd01', 0, 0, '2024-12-07 03:38:47'),
-(11, 19, 'b52fe4f00d69ed06b1544abea5dce795b64ab07a57fcbc002cca712efe266044', 0, 0, '2024-12-11 06:01:25');
+(11, 19, 'b52fe4f00d69ed06b1544abea5dce795b64ab07a57fcbc002cca712efe266044', 0, 0, '2024-12-11 06:01:25'),
+(12, 20, '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 0, 0, '2025-12-25 01:15:48');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bookcategory`
+-- Struktur dari tabel `bookcategory`
 --
 
 CREATE TABLE `bookcategory` (
@@ -65,7 +65,7 @@ CREATE TABLE `bookcategory` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `bookcategory`
+-- Dumping data untuk tabel `bookcategory`
 --
 
 INSERT INTO `bookcategory` (`book_id`, `category_id`) VALUES
@@ -107,7 +107,7 @@ INSERT INTO `bookcategory` (`book_id`, `category_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `books`
+-- Struktur dari tabel `books`
 --
 
 CREATE TABLE `books` (
@@ -123,7 +123,7 @@ CREATE TABLE `books` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `books`
+-- Dumping data untuk tabel `books`
 --
 
 INSERT INTO `books` (`id`, `title`, `description`, `page`, `created_at`, `is_trending`, `author`, `cover_src`, `overview`) VALUES
@@ -159,7 +159,7 @@ INSERT INTO `books` (`id`, `title`, `description`, `page`, `created_at`, `is_tre
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Struktur dari tabel `categories`
 --
 
 CREATE TABLE `categories` (
@@ -168,7 +168,7 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `categories`
+-- Dumping data untuk tabel `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`) VALUES
@@ -186,7 +186,7 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `duration`
+-- Struktur dari tabel `duration`
 --
 
 CREATE TABLE `duration` (
@@ -196,7 +196,7 @@ CREATE TABLE `duration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `duration`
+-- Dumping data untuk tabel `duration`
 --
 
 INSERT INTO `duration` (`id`, `day`, `price`) VALUES
@@ -210,7 +210,7 @@ INSERT INTO `duration` (`id`, `day`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `feedback`
+-- Struktur dari tabel `feedback`
 --
 
 CREATE TABLE `feedback` (
@@ -222,7 +222,7 @@ CREATE TABLE `feedback` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `feedback`
+-- Dumping data untuk tabel `feedback`
 --
 
 INSERT INTO `feedback` (`user_id`, `feed`, `is_read`, `id`, `created_at`) VALUES
@@ -241,7 +241,7 @@ INSERT INTO `feedback` (`user_id`, `feed`, `is_read`, `id`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `server_status`
+-- Struktur dari tabel `server_status`
 --
 
 CREATE TABLE `server_status` (
@@ -250,7 +250,7 @@ CREATE TABLE `server_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `server_status`
+-- Dumping data untuk tabel `server_status`
 --
 
 INSERT INTO `server_status` (`name`, `status`) VALUES
@@ -260,7 +260,7 @@ INSERT INTO `server_status` (`name`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `topup`
+-- Struktur dari tabel `topup`
 --
 
 CREATE TABLE `topup` (
@@ -272,7 +272,7 @@ CREATE TABLE `topup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `topup`
+-- Dumping data untuk tabel `topup`
 --
 
 INSERT INTO `topup` (`id`, `bank_id`, `nominal`, `status`, `created_at`) VALUES
@@ -296,7 +296,7 @@ INSERT INTO `topup` (`id`, `bank_id`, `nominal`, `status`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transactions`
+-- Struktur dari tabel `transactions`
 --
 
 CREATE TABLE `transactions` (
@@ -312,7 +312,7 @@ CREATE TABLE `transactions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `transactions`
+-- Dumping data untuk tabel `transactions`
 --
 
 INSERT INTO `transactions` (`id`, `transaction_code`, `user_id`, `book_id`, `duration_id`, `start_date`, `end_date`, `status`, `created_at`) VALUES
@@ -331,7 +331,7 @@ INSERT INTO `transactions` (`id`, `transaction_code`, `user_id`, `book_id`, `dur
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -347,7 +347,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `fullname`, `username`, `email`, `password`, `birth`, `avatar`, `created_at`, `status`) VALUES
@@ -369,12 +369,14 @@ INSERT INTO `users` (`id`, `fullname`, `username`, `email`, `password`, `birth`,
 (16, 'rohman', 'rohmanmaulana', 'rohamnanna@gmail.com', '55bc48d4db545457836695da49e6284cebfd4a6bd17b3a571586b857a1410bae', '2004-02-12', '1', '2024-12-07 08:50:08', 'User'),
 (17, 'bayu firmansyah', 'bayumwehehe', 'bayusimo81@gmail.com', '872ae2638ea6ad8000da2cdefd22b0507aed840db5bb3edb8de068e8ce0d9eae', '2002-06-12', '1', '2024-12-08 05:24:13', 'User'),
 (18, 'sayabayu', 'sayabayu', 'bayusimo81@contoh.com', '92d2a813cdbaf0220c09d7a26230b0fa92b01197a390e95459588465f71f79bd', '2024-12-08', '1', '2024-12-08 09:01:17', 'User'),
-(19, 'baywa azizah', 'baywabaywa', 'baywa12345@gmail.com', 'b52fe4f00d69ed06b1544abea5dce795b64ab07a57fcbc002cca712efe266044', '2004-03-27', '1', '2024-12-11 05:59:27', 'User');
+(19, 'baywa azizah', 'baywabaywa', 'baywa12345@gmail.com', 'b52fe4f00d69ed06b1544abea5dce795b64ab07a57fcbc002cca712efe266044', '2004-03-27', '1', '2024-12-11 05:59:27', 'User'),
+(20, 'Demo User', 'demouser', 'demouser@test.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', '2025-12-15', '1', '2025-12-25 01:14:58', 'User'),
+(21, 'Demo Admin', 'demoadmin', 'demoadmin@test.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', '2025-12-03', '1', '2025-12-25 01:15:32', 'Admin');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `wishlist`
+-- Struktur dari tabel `wishlist`
 --
 
 CREATE TABLE `wishlist` (
@@ -384,7 +386,7 @@ CREATE TABLE `wishlist` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `wishlist`
+-- Dumping data untuk tabel `wishlist`
 --
 
 INSERT INTO `wishlist` (`user_id`, `book_id`, `created_at`) VALUES
@@ -448,60 +450,60 @@ INSERT INTO `wishlist` (`user_id`, `book_id`, `created_at`) VALUES
 --
 
 --
--- Indexes for table `bank`
+-- Indeks untuk tabel `bank`
 --
 ALTER TABLE `bank`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `bookcategory`
+-- Indeks untuk tabel `bookcategory`
 --
 ALTER TABLE `bookcategory`
   ADD PRIMARY KEY (`book_id`,`category_id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- Indexes for table `books`
+-- Indeks untuk tabel `books`
 --
 ALTER TABLE `books`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `categories`
+-- Indeks untuk tabel `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indexes for table `duration`
+-- Indeks untuk tabel `duration`
 --
 ALTER TABLE `duration`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `feedback`
+-- Indeks untuk tabel `feedback`
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `server_status`
+-- Indeks untuk tabel `server_status`
 --
 ALTER TABLE `server_status`
   ADD PRIMARY KEY (`name`);
 
 --
--- Indexes for table `topup`
+-- Indeks untuk tabel `topup`
 --
 ALTER TABLE `topup`
   ADD PRIMARY KEY (`id`),
   ADD KEY `bank_id` (`bank_id`);
 
 --
--- Indexes for table `transactions`
+-- Indeks untuk tabel `transactions`
 --
 ALTER TABLE `transactions`
   ADD PRIMARY KEY (`id`),
@@ -510,102 +512,102 @@ ALTER TABLE `transactions`
   ADD KEY `duration_id` (`duration_id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Indexes for table `wishlist`
+-- Indeks untuk tabel `wishlist`
 --
 ALTER TABLE `wishlist`
   ADD PRIMARY KEY (`user_id`,`book_id`),
   ADD KEY `book_id` (`book_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `bank`
+-- AUTO_INCREMENT untuk tabel `bank`
 --
 ALTER TABLE `bank`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `books`
+-- AUTO_INCREMENT untuk tabel `books`
 --
 ALTER TABLE `books`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT untuk tabel `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `duration`
+-- AUTO_INCREMENT untuk tabel `duration`
 --
 ALTER TABLE `duration`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `feedback`
+-- AUTO_INCREMENT untuk tabel `feedback`
 --
 ALTER TABLE `feedback`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `topup`
+-- AUTO_INCREMENT untuk tabel `topup`
 --
 ALTER TABLE `topup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `transactions`
+-- AUTO_INCREMENT untuk tabel `transactions`
 --
 ALTER TABLE `transactions`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `bank`
+-- Ketidakleluasaan untuk tabel `bank`
 --
 ALTER TABLE `bank`
   ADD CONSTRAINT `bank_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 --
--- Constraints for table `bookcategory`
+-- Ketidakleluasaan untuk tabel `bookcategory`
 --
 ALTER TABLE `bookcategory`
   ADD CONSTRAINT `bookcategory_ibfk_1` FOREIGN KEY (`book_id`) REFERENCES `books` (`id`),
   ADD CONSTRAINT `bookcategory_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `feedback`
+-- Ketidakleluasaan untuk tabel `feedback`
 --
 ALTER TABLE `feedback`
   ADD CONSTRAINT `feedback_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 --
--- Constraints for table `topup`
+-- Ketidakleluasaan untuk tabel `topup`
 --
 ALTER TABLE `topup`
   ADD CONSTRAINT `topup_ibfk_1` FOREIGN KEY (`bank_id`) REFERENCES `bank` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `transactions`
+-- Ketidakleluasaan untuk tabel `transactions`
 --
 ALTER TABLE `transactions`
   ADD CONSTRAINT `transactions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
@@ -613,7 +615,7 @@ ALTER TABLE `transactions`
   ADD CONSTRAINT `transactions_ibfk_3` FOREIGN KEY (`duration_id`) REFERENCES `duration` (`id`);
 
 --
--- Constraints for table `wishlist`
+-- Ketidakleluasaan untuk tabel `wishlist`
 --
 ALTER TABLE `wishlist`
   ADD CONSTRAINT `wishlist_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),

@@ -1,7 +1,7 @@
 <?php 
 // include_once("config.php"); 
 
-define("DB", mysqli_connect('localhost', 'root', '', 'perpus'));
+define("DB", mysqli_connect('localhost', 'root', '', 'macahyuk'));
 
 function getPopulerBooks(){
   $sql = "SELECT * FROM books where is_trending=1 limit 12";

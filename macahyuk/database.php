@@ -278,7 +278,13 @@ function checkUserInBank($user_id,$password){
   else return false;
 }
 
-
+function getUsernameByUserID($user_id){
+  $stmt=DB->prepare("SELECT username FROM users where id=?");
+  $stmt->bind_param('i',$user_id);
+  $stmt->execute();
+  $res=$stmt->get_result()->fetch_assoc()['username'];
+  return $res;
+}
 
 
 
