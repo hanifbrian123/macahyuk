@@ -160,4 +160,3 @@ Pengguna juga dapat melakukan registrasi akun baru melalui halaman pendaftaran.
 3. Bayu Firmansyah 23-002
 4. Wafa' Amatul Azizah 23-018
 
-Link Website : https://macahyuk.kesug.com
